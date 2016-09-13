@@ -21,12 +21,12 @@
           placeholder="list comma separated dishes you usually have for lunch"
           class="form-control" ng-model="dishes">
         </div>
+        <p>If you input ", ," it will be recognized as a dish (an invisible dish)</p>
         <div class="form-group">
           <button class="btn btn-default" ng-click="checkIfTooMuch()">Check If Too Much</button>
         </div>
         <div class="form-group message">
           {{ message }}
-          {{ words_length }}
           <!-- Your message can go here. -->
         </div>
       </div>
