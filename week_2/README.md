@@ -1,5 +1,10 @@
 Module 2 Coding Assignment
 =======
+
+
+You can view the **DEMO** [here](http://nikoladjuza.me/you-took-too-much-man/week_2/)
+
+
 [Click here to SIGN UP for the ***Single Page Web Applications with AngularJS*** course on Coursera](https://www.coursera.org/learn/single-page-web-apps-with-angularjs). It's FREE!
 
 **Ready to implement some cool dynamic behavior right in your web page?! Oh, and do it in an architecturally correct/elegant way?!**

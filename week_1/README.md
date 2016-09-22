@@ -1,5 +1,10 @@
 Module 1 Coding Assignment
 =======
+
+
+You can view the **DEMO** [here](http://nikoladjuza.me/you-took-too-much-man/week_1/)
+
+
 [Click here to SIGN UP for the ***Single Page Web Applications with AngularJS*** course on Coursera](https://www.coursera.org/learn/single-page-web-apps-with-angularjs). It's FREE!
 
 **CODING TIME!!!** You are able to code up your very first AngularJS application! How exciting is that?!
