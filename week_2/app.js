@@ -12,7 +12,7 @@
   function ShoppingListCheckOffService() {
     var service = this
 
-    var toBuy = ["10 cookies", "12 eggs", "13 apples"]
+    var toBuy = ["10 cookies", "12 eggs", "13 apples", "14 cats", "15 dimensions"]
     var bought = []
 
     service.buy = function(index, item) {

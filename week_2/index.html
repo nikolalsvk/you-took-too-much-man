@@ -48,7 +48,7 @@
          </div>
        </ul>
      </div>
-     <div ng-if="toBuyCtrl.toBuy.length < 0" class="emptyMessage">Everything is bought!</div>
+     <div ng-if="toBuyCtrl.toBuy.length == 0" class="emptyMessage">Everything is bought!</div>
     </div>
 
     <!-- Already Bought List -->
@@ -61,7 +61,7 @@
          <div>
        </ul>
       </div>
-      <div ng-if="toBuyCtrl.toBuy.length < 0" class="emptyMessage">Nothing bought yet.
+      <div ng-if="alreadyBoughtCtrl.bought.length == 0" class="emptyMessage">Nothing bought yet.
       </div>
      </div>
   </div>
