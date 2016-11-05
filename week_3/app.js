@@ -16,24 +16,22 @@
       return $http({
         method: "GET",
         url: "https://davids-restaurant.herokuapp.com/menu_items.json"
-      }).then(function(response) {
-        service.foundItems = response.data["menu_items"]
+      })
+        .then(function(response) {
+          service.foundItems = response.data["menu_items"]
 
-        service.foundItems.forEach(function(item, index) {
-          console.log(searchTerm);
-          console.log(index);
-          var isSubstring = item["description"].indexOf(service.searchTerm) !== -1;
-          console.log(isSubstring);
+          service.foundItems.forEach(function(item, index) {
+            var isSubstring = item["description"].indexOf(service.searchTerm) !== -1;
 
-          if(isSubstring) {
+            if(isSubstring) {
 
-          } else {
-            service.foundItems.splice(index, 1);
-          }
-        })
+            } else {
+              service.foundItems.splice(index, 1);
+            }
+          })
 
-        return service.foundItems;
-      });
+          return service.foundItems;
+        });
     }
   }
 
@@ -42,7 +40,7 @@
     narrowDwnCtrl.MenuSearchService = MenuSearchService;
 
     narrowDwnCtrl.getMatchedMenuItems = function(searchTerm) {
-     narrowDwnCtrl.found = narrowDwnCtrl.MenuSearchService.run(searchTerm);
+      narrowDwnCtrl.found = narrowDwnCtrl.MenuSearchService.run(searchTerm);
     }
   }
 
