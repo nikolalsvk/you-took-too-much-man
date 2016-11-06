@@ -1,1 +1,6 @@
-angular.module('Menu', [])
+(function () {
+'use strict';
+
+angular.module('Menu', []);
+
+})();

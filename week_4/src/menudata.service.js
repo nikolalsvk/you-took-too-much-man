@@ -1,5 +1,5 @@
-angular.module('Data', [])
-.service('MenuDataService', MenuDataService);
+angular.module('Data')
+  .service('MenuDataService', MenuDataService);
 
 function MenuDataService($http) {
   var service = this;
@@ -8,22 +8,26 @@ function MenuDataService($http) {
   service.getAllCategories = function() {
     var url = "https://davids-restaurant.herokuapp.com/categories.json";
 
-    service.http.get(url)
+    return service.http.get(url)
       .then(function(results) {
-        service.categories = results;
+        service.categories = results.data;
 
         console.log(service.categories);
-      })
+
+        return service.categories;
+      });
   }
 
-  service.getItemsForCategory(categoryShortName) = function() {
+  service.getItemsForCategory = function(categoryShortName) {
     var url = `https://davids-restaurant.herokuapp.com/menu_items.json?category=${categoryShortName}`;
 
-    service.http.get(url)
+    return service.http.get(url)
       .then(function(result) {
-        service.items = result;
+        service.items = result.data;
 
         console.log(service.items);
+
+        return service.items;
       });
   }
 }

@@ -1,2 +1,6 @@
-angular.module('Data', [])
+(function () {
+'use strict';
 
+angular.module('Data', []);
+
+})();
