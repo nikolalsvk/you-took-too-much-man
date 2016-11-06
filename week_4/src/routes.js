@@ -29,7 +29,7 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
       }
     })
 
-    .state('categories.items', {
+    .state('items', {
       url: '/items/{category}',
       templateUrl: 'src/items/templates/items-state.template.html',
       controller: 'ItemsController',
